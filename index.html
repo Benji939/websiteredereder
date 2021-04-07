@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Family Book</title>
+    </head>
+    <body>
+        <h1 id="heading">Family Book</h2>
+        <img src="familybook.jpg" id="image">
+        <style>
+            #image{width: 250px;
+            height: 350px;}
+            body{text-align: center;}
+            button{width: 200px;
+            height: 30px;
+            font-size: 20px;}
+        </style>
+        <br>
+        <br>
+        <button onclick="changeimage()">Next!</button>
+        <script>
+var names=["Family Book","Benji","Tommy","Timothy","Freida","Laura"];
+var pictures=["familybook.jpg","benji.jpg","tommy.jpg","tim.jpg","freida.jpg","laura.jpg"];
+var i=1;
+function changeimage(){
+  
+ 
+    if(i<6){
+document.getElementById("heading").innerHTML=names[i];
+document.getElementById("image").src=pictures[i];
+i=i+1;}
+else{i=0;}
+    }
+
+            </script>
+    </body>
+</html>
